@@ -14,7 +14,7 @@ This is just a shell script which means it glues together:
 
 ## Copyright & License
 
-©2018 [Dorian Taylor](https://doriantaylor.com/)
+©2020 [Dorian Taylor](https://doriantaylor.com/)
 
 This software is provided under
 the [Apache License, 2.0](https://www.apache.org/licenses/LICENSE-2.0).
