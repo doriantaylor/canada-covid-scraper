@@ -1,0 +1,12 @@
+{
+  "date": "2020-02-20",
+  "locality": {
+    "Ontario": 3,
+    "British Columbia": 5
+  },
+  "tests": {
+    "negative": 350,
+    "positive": 8,
+    "total": 358
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2020-03-11",
+  "locality": {
+    "Ontario": 42,
+    "British Columbia": 39,
+    "Quebec": 7,
+    "Alberta": 14,
+    "Repatriated Canadians": 1,
+    "Total cases:": 103
+  },
+  "tests": {
+    "negative": 619,
+    "positive": 23,
+    "total": 642
+  }
+}

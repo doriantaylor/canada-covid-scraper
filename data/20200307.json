@@ -1,0 +1,13 @@
+{
+  "date": "2020-03-07",
+  "locality": {
+    "Ontario": 28,
+    "British Columbia": 27,
+    "Quebec": 2
+  },
+  "tests": {
+    "negative": 538,
+    "positive": 15,
+    "total": 553
+  }
+}
