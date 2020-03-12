@@ -1,3 +1,4 @@
+#!/bin/sh
 DATES=dates.csv
 URI=https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html
 XSLT=canada-covid.xsl
