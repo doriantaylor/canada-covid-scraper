@@ -7,7 +7,7 @@
 
 <xsl:output method="text" media-type="application/json" encoding="utf-8"/>
 
-<xsl:key name="tables" match="html:div[contains(@class, 'table-responsive')]/html:table" use="''"/>
+<xsl:key name="tables" match="html:table[../html:div][contains(@class, 'table-responsive')]|html:table[contains(@class, 'table-bordered')]" use="''"/>
 
 <xsl:template match="/">
   <xsl:variable name="tables" select="key('tables', '')"/>
@@ -40,7 +40,15 @@
 
   <xsl:variable name="md" select="normalize-space(substring-before($date, ','))"/>
   <xsl:message>md: <xsl:value-of select="$md"/></xsl:message>
-  <xsl:variable name="year" select="normalize-space(substring-after($date, ','))"/>
+  <xsl:variable name="year">
+    <xsl:variable name="_" select="normalize-space(substring-after($date, ','))"/>
+    <xsl:choose>
+      <xsl:when test="contains($_, ',')">
+        <xsl:value-of select="normalize-space(substring-before($_, ','))"/>
+      </xsl:when>
+      <xsl:otherwise><xsl:value-of select="$_"/></xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
   <xsl:variable name="month">
     <xsl:variable name="_" select="document('')/xsl:stylesheet/x:months/x:month[normalize-space(.) = substring-before($md, ' ')]"/>
     <!--<xsl:message>md <xsl:value-of select="contains($md, ' ')"/></xsl:message>-->

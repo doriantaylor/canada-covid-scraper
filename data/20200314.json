@@ -1,0 +1,19 @@
+{
+  "date": "2020-03-14",
+  "locality": {
+    "British Columbia": [0, 64],
+    "Alberta": [0, 29],
+    "Saskatchewan": [2, 0],
+    "Manitoba": [3, 1],
+    "Ontario": [0, 79],
+    "Quebec": [0, 17],
+    "New Brunswick": [1, 1],
+    "Repatriated travellers": [0, 2],
+    "Total cases": [6, 193]
+  },
+  "tests": {
+    "negative": 771,
+    "positive": 25,
+    "total": 796
+  }
+}
